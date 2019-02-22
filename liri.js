@@ -30,7 +30,7 @@ let concertThis = function (artist) {
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=" + keys.BIT.apiKey)
         .then(function (response) {
             //formatting to fit the moment format
-            let str = response.data[0].datetime;
+            let str = response.data[0].datetime
             let day = str.split("T");
             //console logging the requested data
             console.log(artist + "'s next show is at " + response.data[0].venue.name + " in " + response.data[0].venue.city + "," + response.data[0].venue.region + " on " + moment(day[0]).format("MM/DD/YYYY"));
