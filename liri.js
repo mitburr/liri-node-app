@@ -100,9 +100,9 @@ let movieThis = function (movie) {
 if (operator === "spotify-this-song") { spotifyThisSong(argument); }
 else if (operator === "concert-this") { concertThis(argument); }
 else if (operator === "movie-this") { movieThis(argument) }
-// else if (operator === "do-what-it-says") { 
-//     console.log(variablesArray[0]);
-//     spotifyThisSong(variablesArray[0]); 
-//     concertThis(variablesArray[1]); 
-//     movieThis(variablesArray[2]); 
-// }
+else if (operator === "do-what-it-says") { 
+    console.log(variablesArray[0]);
+    spotifyThisSong(variablesArray[0]); 
+    concertThis(variablesArray[1]); 
+    movieThis(variablesArray[2]); 
+}
